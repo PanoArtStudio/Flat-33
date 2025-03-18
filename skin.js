@@ -1,7 +1,7 @@
 // Garden Gnome Software - Skin
 // Pano2VR 5.2.4/15996
 // Filename: BLUE MAP silhouette_autohide.ggsk
-// Generated Вт мар 18 09:37:00 2025
+// Generated Вт мар 18 09:59:40 2025
 
 function pano2vrSkin(player,base) {
 	var ggSkinVars = [];
@@ -4585,7 +4585,7 @@ function pano2vrSkin(player,base) {
 			hs+='height : 32px;';
 			hs+='left : -16px;';
 			hs+='position : absolute;';
-			hs+='top : -16px;';
+			hs+='top : -17px;';
 			hs+='visibility : hidden;';
 			hs+='width : 32px;';
 			hs+='pointer-events:auto;';
@@ -4663,9 +4663,9 @@ function pano2vrSkin(player,base) {
 			hs ='';
 			hs+='cursor : pointer;';
 			hs+='height : 62px;';
-			hs+='left : -33px;';
+			hs+='left : -16px;';
 			hs+='position : absolute;';
-			hs+='top : -19px;';
+			hs+='top : -17px;';
 			hs+='visibility : inherit;';
 			hs+='width : 32px;';
 			hs+='pointer-events:auto;';
