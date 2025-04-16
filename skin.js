@@ -1,7 +1,7 @@
 // Garden Gnome Software - Skin
 // Pano2VR 5.2.4/15996
 // Filename: BLUE MAP silhouette_autohide.ggsk
-// Generated Ср апр 16 14:17:57 2025
+// Generated Ср апр 16 15:07:50 2025
 
 function pano2vrSkin(player,base) {
 	var ggSkinVars = [];
@@ -156,7 +156,7 @@ function pano2vrSkin(player,base) {
 		hs ='';
 		hs+='cursor : pointer;';
 		hs+='height : 32px;';
-		hs+='left : 26px;';
+		hs+='left : 16px;';
 		hs+='position : absolute;';
 		hs+='top : -1px;';
 		hs+='visibility : hidden;';
@@ -237,7 +237,7 @@ function pano2vrSkin(player,base) {
 		hs ='';
 		hs+='cursor : pointer;';
 		hs+='height : 32px;';
-		hs+='left : 26px;';
+		hs+='left : 16px;';
 		hs+='position : absolute;';
 		hs+='top : -1px;';
 		hs+='visibility : inherit;';
@@ -297,166 +297,6 @@ function pano2vrSkin(player,base) {
 			me._fullscreen.ggUpdateConditionResize();
 		}
 		this._hide_elements.appendChild(this._fullscreen);
-		this._autorotate=document.createElement('div');
-		this._autorotate__img=document.createElement('img');
-		this._autorotate__img.className='ggskin ggskin_svg';
-		this._autorotate__img.setAttribute('src',basePath + 'images/autorotate.svg');
-		this._autorotate__img.setAttribute('style','position: absolute;top: 0px;left: 0px;width: 100%;height: 100%;-webkit-user-drag:none;pointer-events:none;');
-		this._autorotate__img['ondragstart']=function() { return false; };
-		this._autorotate.appendChild(this._autorotate__img);
-		this._autorotate__imgo=document.createElement('img');
-		this._autorotate__imgo.className='ggskin ggskin_svg';
-		this._autorotate__imgo.setAttribute('src',basePath + 'images/autorotate__o.svg');
-		this._autorotate__imgo.setAttribute('style','position: absolute;top: 0px;left: 0px;width: 100%;height: 100%;-webkit-user-drag:none;visibility:hidden;pointer-events:none;');
-		this._autorotate__imgo['ondragstart']=function() { return false; };
-		this._autorotate.appendChild(this._autorotate__imgo);
-		this._autorotate.ggId="autorotate";
-		this._autorotate.ggParameter={ rx:0,ry:0,a:0,sx:1,sy:1 };
-		this._autorotate.ggVisible=true;
-		this._autorotate.className='ggskin ggskin_svg ';
-		this._autorotate.ggType='svg';
-		hs ='';
-		hs+='cursor : pointer;';
-		hs+='height : 32px;';
-		hs+='left : -9px;';
-		hs+='position : absolute;';
-		hs+='top : -1px;';
-		hs+='visibility : inherit;';
-		hs+='width : 32px;';
-		hs+='pointer-events:auto;';
-		this._autorotate.setAttribute('style',hs);
-		this._autorotate.style[domTransform + 'Origin']='50% 50%';
-		me._autorotate.ggIsActive=function() {
-			if ((this.parentNode) && (this.parentNode.ggIsActive)) {
-				return this.parentNode.ggIsActive();
-			}
-			return false;
-		}
-		me._autorotate.ggElementNodeId=function() {
-			if ((this.parentNode) && (this.parentNode.ggElementNodeId)) {
-				return this.parentNode.ggElementNodeId();
-			}
-			return me.player.getCurrentNode();
-		}
-		this._autorotate.onclick=function (e) {
-			me.player.startAutorotate("0.2","5","1");
-		}
-		this._autorotate.onmouseover=function (e) {
-			me._autorotate__img.style.visibility='hidden';
-			me._autorotate__imgo.style.visibility='inherit';
-		}
-		this._autorotate.onmouseout=function (e) {
-			me._autorotate__img.style.visibility='inherit';
-			me._autorotate__imgo.style.visibility='hidden';
-		}
-		me._autorotate.ggCurrentLogicStateVisible = -1;
-		this._autorotate.ggUpdateConditionTimer=function () {
-			var newLogicStateVisible;
-			if (
-				(me.player.getIsAutorotating() == true)
-			)
-			{
-				newLogicStateVisible = 0;
-			}
-			else {
-				newLogicStateVisible = -1;
-			}
-			if (me._autorotate.ggCurrentLogicStateVisible != newLogicStateVisible) {
-				me._autorotate.ggCurrentLogicStateVisible = newLogicStateVisible;
-				me._autorotate.style[domTransition]='';
-				if (me._autorotate.ggCurrentLogicStateVisible == 0) {
-					me._autorotate.style.visibility="hidden";
-					me._autorotate.ggVisible=false;
-				}
-				else {
-					me._autorotate.style.visibility=(Number(me._autorotate.style.opacity)>0||!me._autorotate.style.opacity)?'inherit':'hidden';
-					me._autorotate.ggVisible=true;
-				}
-			}
-		}
-		this._autorotate.ggUpdatePosition=function (useTransition) {
-		}
-		this._hide_elements.appendChild(this._autorotate);
-		this._autorotate_off=document.createElement('div');
-		this._autorotate_off__img=document.createElement('img');
-		this._autorotate_off__img.className='ggskin ggskin_svg';
-		this._autorotate_off__img.setAttribute('src',basePath + 'images/autorotate_off.svg');
-		this._autorotate_off__img.setAttribute('style','position: absolute;top: 0px;left: 0px;width: 100%;height: 100%;-webkit-user-drag:none;pointer-events:none;');
-		this._autorotate_off__img['ondragstart']=function() { return false; };
-		this._autorotate_off.appendChild(this._autorotate_off__img);
-		this._autorotate_off__imgo=document.createElement('img');
-		this._autorotate_off__imgo.className='ggskin ggskin_svg';
-		this._autorotate_off__imgo.setAttribute('src',basePath + 'images/autorotate_off__o.svg');
-		this._autorotate_off__imgo.setAttribute('style','position: absolute;top: 0px;left: 0px;width: 100%;height: 100%;-webkit-user-drag:none;visibility:hidden;pointer-events:none;');
-		this._autorotate_off__imgo['ondragstart']=function() { return false; };
-		this._autorotate_off.appendChild(this._autorotate_off__imgo);
-		this._autorotate_off.ggId="autorotate_off";
-		this._autorotate_off.ggParameter={ rx:0,ry:0,a:0,sx:1,sy:1 };
-		this._autorotate_off.ggVisible=false;
-		this._autorotate_off.className='ggskin ggskin_svg ';
-		this._autorotate_off.ggType='svg';
-		hs ='';
-		hs+='cursor : pointer;';
-		hs+='height : 32px;';
-		hs+='left : -9px;';
-		hs+='position : absolute;';
-		hs+='top : -1px;';
-		hs+='visibility : hidden;';
-		hs+='width : 32px;';
-		hs+='pointer-events:auto;';
-		this._autorotate_off.setAttribute('style',hs);
-		this._autorotate_off.style[domTransform + 'Origin']='50% 50%';
-		me._autorotate_off.ggIsActive=function() {
-			if ((this.parentNode) && (this.parentNode.ggIsActive)) {
-				return this.parentNode.ggIsActive();
-			}
-			return false;
-		}
-		me._autorotate_off.ggElementNodeId=function() {
-			if ((this.parentNode) && (this.parentNode.ggElementNodeId)) {
-				return this.parentNode.ggElementNodeId();
-			}
-			return me.player.getCurrentNode();
-		}
-		this._autorotate_off.onclick=function (e) {
-			me.player.stopAutorotate();
-		}
-		this._autorotate_off.onmouseover=function (e) {
-			me._autorotate_off__img.style.visibility='hidden';
-			me._autorotate_off__imgo.style.visibility='inherit';
-		}
-		this._autorotate_off.onmouseout=function (e) {
-			me._autorotate_off__img.style.visibility='inherit';
-			me._autorotate_off__imgo.style.visibility='hidden';
-		}
-		me._autorotate_off.ggCurrentLogicStateVisible = -1;
-		this._autorotate_off.ggUpdateConditionTimer=function () {
-			var newLogicStateVisible;
-			if (
-				(me.player.getIsAutorotating() == true)
-			)
-			{
-				newLogicStateVisible = 0;
-			}
-			else {
-				newLogicStateVisible = -1;
-			}
-			if (me._autorotate_off.ggCurrentLogicStateVisible != newLogicStateVisible) {
-				me._autorotate_off.ggCurrentLogicStateVisible = newLogicStateVisible;
-				me._autorotate_off.style[domTransition]='';
-				if (me._autorotate_off.ggCurrentLogicStateVisible == 0) {
-					me._autorotate_off.style.visibility=(Number(me._autorotate_off.style.opacity)>0||!me._autorotate_off.style.opacity)?'inherit':'hidden';
-					me._autorotate_off.ggVisible=true;
-				}
-				else {
-					me._autorotate_off.style.visibility="hidden";
-					me._autorotate_off.ggVisible=false;
-				}
-			}
-		}
-		this._autorotate_off.ggUpdatePosition=function (useTransition) {
-		}
-		this._hide_elements.appendChild(this._autorotate_off);
 		this.divSkin.appendChild(this._hide_elements);
 		this._loading=document.createElement('div');
 		this._loading.ggId="loading";
@@ -4013,8 +3853,6 @@ function pano2vrSkin(player,base) {
 	this.skinTimerEvent=function() {
 		setTimeout(function() { me.skinTimerEvent(); }, 10);
 		me.ggCurrentTime=new Date().getTime();
-		me._autorotate.ggUpdateConditionTimer();
-		me._autorotate_off.ggUpdateConditionTimer();
 		me._loadingtext.ggUpdateText();
 		var hs='';
 		if (me._loadingbar.ggParameter) {
