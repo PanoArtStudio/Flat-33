@@ -1,7 +1,7 @@
 // Garden Gnome Software - Skin
 // Pano2VR 5.2.4/15996
-// Filename: BLUE MAP silhouette_autohide.ggsk
-// Generated Ср апр 16 15:07:50 2025
+// Filename: blue with a map and blue interface silhouette_autohide.ggsk
+// Generated Ср апр 16 15:52:39 2025
 
 function pano2vrSkin(player,base) {
 	var ggSkinVars = [];
@@ -156,9 +156,9 @@ function pano2vrSkin(player,base) {
 		hs ='';
 		hs+='cursor : pointer;';
 		hs+='height : 32px;';
-		hs+='left : 16px;';
+		hs+='left : -4px;';
 		hs+='position : absolute;';
-		hs+='top : -1px;';
+		hs+='top : 0px;';
 		hs+='visibility : hidden;';
 		hs+='width : 32px;';
 		hs+='pointer-events:auto;';
@@ -237,9 +237,9 @@ function pano2vrSkin(player,base) {
 		hs ='';
 		hs+='cursor : pointer;';
 		hs+='height : 32px;';
-		hs+='left : 16px;';
+		hs+='left : -4px;';
 		hs+='position : absolute;';
-		hs+='top : -1px;';
+		hs+='top : 0px;';
 		hs+='visibility : inherit;';
 		hs+='width : 32px;';
 		hs+='pointer-events:auto;';
@@ -3593,7 +3593,7 @@ function pano2vrSkin(player,base) {
 		hs ='';
 		hs+='cursor : pointer;';
 		hs+='height : 80px;';
-		hs+='left : 40px;';
+		hs+='left : 30px;';
 		hs+='position : absolute;';
 		hs+='top : -85px;';
 		hs+='visibility : inherit;';
